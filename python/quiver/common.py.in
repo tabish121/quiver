@@ -83,6 +83,7 @@ _Impl("arrow", "qpid-proton-c", aliases=["c"], peer_to_peer=True)
 _Impl("arrow", "qpid-proton-python", aliases=["python", "py"], peer_to_peer=True)
 _Impl("arrow", "rhea", aliases=["javascript", "js"], peer_to_peer=True)
 _Impl("arrow", "vertx-proton", aliases=["java"])
+_Impl("arrow", "amqperative", aliases=["java"])
 
 _Impl("server", "activemq", protocols=["amqp", "openwire"], executable="activemq")
 _Impl("server", "activemq-artemis", aliases=["artemis"], protocols=["amqp", "openwire", "core"], executable="artemis")
@@ -145,6 +146,7 @@ arrow implementations:
   qpid-proton-python (python, py)
   rhea (javascript, js)
   vertx-proton (java)             Client mode only
+  amqperative (java)             Client mode only
 """
 
 _epilog_server_impls = """
