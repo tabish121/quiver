@@ -25,31 +25,31 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>quiver-activemq-artemis-jms</artifactId>
+  <artifactId>quiver-protonj2</artifactId>
+  <name>Quiver Proton Imperative API Client</name>
+  <description>The protonj2 Imperative API Client Binding for Quiver</description>
   <packaging>jar</packaging>
-  <name>Quiver ActiveMQ Artemis</name>
-  <description>The ActiveMQ Artemis JMS Binding for Quiver</description>
 
   <dependencies>
     <dependency>
+      <groupId>org.apache.qpid</groupId>
+      <artifactId>protonj2-client</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-native-epoll</artifactId>
-      <version>${artemis-jms-netty-version}</version>
+      <version>${protonj2-netty-version}</version>
       <classifier>${netty-transport-native-epoll-classifier}</classifier>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-native-kqueue</artifactId>
-      <version>${artemis-jms-netty-version}</version>
+      <version>${protonj2-netty-version}</version>
       <classifier>${netty-transport-native-kqueue-classifier}</classifier>
-    </dependency>
-    <dependency>
-      <groupId>net.ssorj.quiver</groupId>
-      <artifactId>quiver-jms-driver</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.activemq</groupId>
-      <artifactId>artemis-jms-client</artifactId>
     </dependency>
   </dependencies>
 
@@ -76,4 +76,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>
