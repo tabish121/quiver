@@ -33,7 +33,7 @@
   <dependencies>
     <dependency>
       <groupId>net.ssorj.quiver</groupId>
-      <artifactId>quiver-jms-driver</artifactId>
+      <artifactId>quiver-jakarta-jms-driver</artifactId>
     </dependency>
     <dependency>
       <groupId>org.apache.qpid</groupId>
